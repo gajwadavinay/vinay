@@ -1,2 +1,2 @@
 # MY-project
-CrystaLLM is an AI project that uses machine learning (especially LLM + deep learning models) to:  Predict crystal structures  Classify materials based on lattice parameters  Generate synthetic crystal data  Analyze XRD patterns  Assist in materials discovery
+CrystaLLM is a machine-learning-powered project designed to analyze, classify, and predict crystal structures using modern AI techniques. It combines Deep Learning + Materials Science to help researchers, students, and developers understand and work with crystallographic data.

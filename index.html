@@ -1,1 +1,104 @@
 
+<!doctype html>
+<!-- index.html — CrystaLLM / Project homepage -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CrystaLLM — Project Home</title>
+  <meta name="description" content="CrystaLLM — Crystal Structure Learning Model. Documentation, examples and datasets." />
+
+  <!-- Basic styling (feel free to replace with your own CSS or Tailwind) -->
+  <style>
+    :root{
+      --maxw:1000px;
+      --accent:#0b74da;
+      --muted:#666;
+      --bg:#f7f9fc;
+    }
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;margin:0;background:var(--bg);color:#111;}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(10,20,30,0.06);}
+    header{display:flex;align-items:center;gap:16px}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{color:var(--muted);margin-top:6px}
+    nav a{color:var(--accent);text-decoration:none;margin-right:12px}
+    .pdf-frame{width:100%;height:600px;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    footer{margin-top:18px;color:var(--muted);font-size:0.9rem}
+    pre {background:#0f1724;color:#e6eef8;padding:12px;border-radius:8px;overflow:auto}
+  </style>
+</head>
+<body>
+  <h1>K196</h1>
+  <main class="wrap">
+    <header>
+      <div>
+        <h1>CrystaLLM — Project Home</h1>
+        <p class="lead">Docs, code and datasets for the CrystaLLM crystal structure project.</p>
+      </div>
+    </header>
+
+    <section style="margin-top:22px">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#pdf">Workshop PDF</a>
+        <a href="#usage">How to run</a>
+      </nav>
+    </section>
+
+    <section id="about" style="margin-top:18px">
+      <h2>About</h2>
+      <p>
+        CrystaLLM is a sample repo layout and demo site for crystal-structure ML experiments.
+        Use the links below to view documentation and examples.
+      </p>
+    </section>
+
+    <section id="pdf" style="margin-top:18px">
+      <h2>Workshop PDF (uploaded)</h2>
+      <p class="lead">Click to open the uploaded workshop PDF or view it embedded below.</p>
+
+      <!-- Direct link to the uploaded PDF (local path provided) -->
+      <p>
+        <a class="btn" href="/mnt/data/CN_Workbook_Session_3_Part_2.pdf" target="_blank" rel="noopener noreferrer">
+          Open PDF in new tab
+        </a>
+      </p>
+
+      <!-- Embedded PDF viewer (works on most browsers) -->
+      <div class="pdf-frame" style="margin-top:12px">
+        <iframe
+          src="/mnt/data/CN_Workbook_Session_3_Part_2.pdf"
+          title="Workshop PDF"
+          width="100%" height="100%" style="border:0"
+        >
+          Your browser does not support embedded PDFs. Use the link above to download the file.
+        </iframe>
+      </div>
+    </section>
+
+    <section id="usage" style="margin-top:18px">
+      <h2>How to use this repo</h2>
+      <ol>
+        <li>Put this file as <code>index.html</code> in the root of your repository (or in <code>/docs</code> if you prefer).</li>
+        <li>Add the uploaded PDF file to the repository at <code>CN_Workbook_Session_3_Part_2.pdf</code> (same folder as this HTML or adjust path accordingly).</li>
+        <li>Enable GitHub Pages (Settings → Pages → source: <code>main</code> branch, folder: <code>/ (root)</code> or <code>/docs</code>).</li>
+      </ol>
+
+      <h3>Quick Git commands</h3>
+      <pre>
+# from your project folder
+git init
+git add index.html CN_Workbook_Session_3_Part_2.pdf
+git commit -m "Add site index and workshop PDF"
+git remote add origin https://github.com/your-username/your-repo.git
+git push -u origin main
+      </pre>
+    </section>
+
+    <footer>
+      <p>Made with ♥ — update this page with your project readme or docs.</p>
+    </footer>
+  </main>
+</body>
+</html>
